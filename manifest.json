@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "AllTab",
+  "version": "1.0.0",
+  "description": "Save up to 95% memory by converting all your tabs into a clean, organized list. Restore them anytime.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "windows"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "AllTab - Save all tabs"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html"
+}
